@@ -2,15 +2,30 @@ import React from 'react';
 import products from '../data';
 import ProductCard from '../components/ProductCard';
 import Header from '../components/Header';
+import TopSlider from '../components/TopSlider';
+import slide1 from "../assets/slide1.jpg";
+import slide2 from "../assets/slide2.jpg";
+import slide3 from "../assets/slide3.jpg";
+import slide4 from "../assets/slide4.jpg";
 
 
 function ProductsPage({product, onAddToCart}) {
+
+  const slides = [
+    {url: slide1, id:1},
+    {url: slide2, id:2},
+    {url: slide3, id:3},
+    {url: slide4, id:4}
+  ]
 
 
 
   return (
     <>
+
     <Header />
+
+    <TopSlider slides={slides} />
  
     <div className='container'>
         <div className='row product-page'>

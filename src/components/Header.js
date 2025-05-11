@@ -21,7 +21,7 @@ function Header() {
 
             <div className="right col-md-6 col-sm-1">
 
-                <img src={logo}  title='Logo'/>
+                <img src={logo}  title='Logo' alt='logo'/>
 
 
                 {!isSearch && (
