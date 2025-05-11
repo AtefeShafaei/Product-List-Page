@@ -1,16 +1,43 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 
 function TopSlider({slides}) {
 
     const [currentIndex, setCurrentIndex] = useState(0);
+    const [startAuto, setStartAuto] = useState(true);
+
+    useEffect(() => {
+        if (!startAuto) return;
+      
+        const timeout = setTimeout(() => {
+          goToNext();
+        }, 5000);
+      
+        return () => clearTimeout(timeout);
+
+      }, [currentIndex, startAuto]);
+      
+
+
+
+
 
     const goToPrev = () => {
-        
+        setStartAuto(false);
+        setCurrentIndex(prev => (prev === 0 ? slides.length-1 : prev - 1));
+        setTimeout(() => setStartAuto(true), 100);
     }
 
     const goToNext = () => {
+        setStartAuto(false);
+        setCurrentIndex(prev => (prev === slides.length-1 ? 0 : prev + 1));
+        setTimeout(() => setStartAuto(true), 100);
+    }
 
+    const goCurrent = (index) => {
+        setStartAuto(false);
+        setCurrentIndex(index);
+        setTimeout(() => setStartAuto(true), 100);
     }
 
 
@@ -20,6 +47,7 @@ function TopSlider({slides}) {
         <div className='slider-container'>
 
             {slides.map((slide, index) => (
+
                 <div
                 style={{ backgroundImage: `url(${slide.url})` }} 
                 key={index}
@@ -29,19 +57,23 @@ function TopSlider({slides}) {
             ))}
 
 
-            <div className='prev-slide' onClick={goToPrev}>
+            <div className='next-slide' onClick={goToNext}>
+            
             ❰
             </div>
-            
-            <div className='next-slide' onClick={goToNext}>
+
+            <div className='prev-slide' onClick={goToPrev}>
             ❱
             </div>
 
+
             <div className='dots'>
-                <span className='dot active'></span>
-                <span className='dot'></span>
-                <span className='dot'></span>
+                {slides.map((j, index) =>  (
+                    <span className={`${index === currentIndex ? 'dot active' : 'dot'}`} onClick={() => goCurrent(index)}></span>
+                ))}
             </div>
+
+            
 
         </div>
     </div>
