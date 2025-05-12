@@ -1,12 +1,13 @@
 import React from 'react';
-import products from './data';
 import ProductsPage from './pages/ProductsPage';
-
+import { ProductProvider } from './context/ProductContext'; 
 
 function App() {
   return (
-    <ProductsPage />
-  )
+    <ProductProvider>  
+      <ProductsPage />
+    </ProductProvider>
+  );
 }
 
-export default App
+export default App;

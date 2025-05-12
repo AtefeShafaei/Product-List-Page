@@ -240,23 +240,36 @@ a {
 
 /* MidSlider */
 .mid-slider {
-    height: 250px;
-    position: relative;
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 10px 0;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    margin-top: 15px;
 }
 
+.mid-card::-webkit-scrollbar {
+    display: none;  
+}  
+
 .mid {
-    background-color: #b109eb;
     width: 100%;
-    height: 100%;
-    margin-top: 30px;
-    border-radius: 10px;
     display: flex;
+    border-radius: 10px;
+    background-color: #b109eb;
 }
 
 .swipper-slide {
     display: flex;
     flex-direction: column;
     flex-grow: 0.1;
+}
+
+.swipper-slide a {
+    color: white;
+    font-size: 13px;
+    margin-right: 18px;
 }
 
 .text-pic {
@@ -271,17 +284,82 @@ a {
     margin: 5px 10px;
 }
 
-.swipper-slide a {
-    color: white;
-    font-size: 13px;
-    margin-right: 26px;
-    font-weight: 800;
-}
 
 .swipper-card{
-    flex-grow: 0.8;
+    flex-grow: 1;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.mid-card {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 10px;
+    scroll-behavior: smooth;
+}
+
+.mid-slider-card {
+    min-width: 130px;
+    max-width: 130px;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.1); 
+}
+
+.mid-slider-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+.next-pro {
+    position: absolute;
+    top: 40%;
+    right: 20px;
+    z-index: 1000;
+    background: rgba(255,255,255,0.9);
+    border: 1px solid gray;
+    text-align: center;
+    border-radius: 50%;
+    padding: 8px 8px;
+    font-size: 15px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.prev-pro {
+    position: absolute;
+    top: 40%;
+    left: 20px;
+    z-index: 1000;
+    background: rgba(255,255,255,0.9);
+    border: 1px solid gray;
+    text-align: center;
+    border-radius: 50%;
+    padding: 8px 8px;
+    font-size: 15px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
   
+  
+  
+
 
 
 
