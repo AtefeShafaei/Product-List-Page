@@ -6,6 +6,7 @@ import TopSlider from '../components/TopSlider';
 import slide1 from "../assets/slide1.jpg";
 import slide2 from "../assets/slide2.jpg";
 import slide3 from "../assets/slide3.jpg";
+import MidSlider from '../components/MidSlider';
 
 
 function ProductsPage({product, onAddToCart}) {
@@ -24,6 +25,8 @@ function ProductsPage({product, onAddToCart}) {
     <Header />
 
     <TopSlider slides={slides} />
+
+    <MidSlider />
  
     <div className='container'>
         <div className='row product-page'>

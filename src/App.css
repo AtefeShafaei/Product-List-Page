@@ -12,11 +12,17 @@ a {
     text-decoration: none;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
 /* ------------------------- Header ---------------------- */
 
 .header {
     background-color: rgb(255, 255, 255);
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
     z-index: 1000;
@@ -164,7 +170,7 @@ a {
     position: relative;
     height: 500px;
     overflow: hidden;
-    margin-top: 100px;
+    margin-top: 30px;
     width: 100%;
     aspect-ratio: 16 / 5;
 }
@@ -178,7 +184,6 @@ a {
   
 .slide {
     position: absolute;
-    
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -230,6 +235,51 @@ a {
 .dot.active {
     background-color: #333;
     transform: scale(1.2);
+}
+
+
+/* MidSlider */
+.mid-slider {
+    height: 250px;
+    position: relative;
+}
+
+.mid {
+    background-color: #b109eb;
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.swipper-slide {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0.1;
+}
+
+.text-pic {
+    width: 70px;
+    height: 70px;
+    margin: 17px 22px;
+}
+
+.mid-pic {
+    width: 100px; 
+    height: 100px;
+    margin: 5px 10px;
+}
+
+.swipper-slide a {
+    color: white;
+    font-size: 13px;
+    margin-right: 26px;
+    font-weight: 800;
+}
+
+.swipper-card{
+    flex-grow: 0.8;
 }
   
 
