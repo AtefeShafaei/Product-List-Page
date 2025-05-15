@@ -11,7 +11,7 @@ function Category() {
         {id:1, url:category1, name:"category1", title:"سلامت"},
         {id:2, url:category2, name:"category2", title:"مکمل"},
         {id:3, url:category3, name:"category3", title:"ضد آفتاب"},
-        {id:4, url:category4, name:"category4", title:"بهداشتی"}
+        {id:4, url:category4, name:"category4", title:"عطر و ادکلن"}
       ]
 
   return (
