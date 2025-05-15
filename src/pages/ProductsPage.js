@@ -7,6 +7,7 @@ import slide2 from "../assets/slide2.jpg";
 import slide3 from "../assets/slide3.jpg";
 import MidSlider from '../components/MidSlider';
 import { useProducts } from '../context/ProductContext';
+import Category from '../components/Category';
 
 
 function ProductsPage({product, onAddToCart}) {
@@ -29,6 +30,8 @@ function ProductsPage({product, onAddToCart}) {
     <TopSlider slides={slides} />
 
     <MidSlider />
+
+    <Category />
  
     <div className='container'>
         <div className='row product-page'>
@@ -40,10 +43,7 @@ function ProductsPage({product, onAddToCart}) {
 
         </div>
     </div>
-    
-    
-    
-    
+
     
     </>
   )

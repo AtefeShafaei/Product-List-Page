@@ -356,7 +356,43 @@ a {
     cursor: pointer;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
-  
+
+
+
+/* Category */
+.category {
+    margin-top: 40px;
+}
+
+.category-content {
+    text-align: center;
+}
+
+.category-content h5 {
+    font-weight: 500;
+    line-height: 2.1;
+}
+
+.category-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    margin-top: 20px;
+    cursor: pointer;
+}  
+
+.category-item img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+}
+
+.category-item p {
+    font-size: 12px;
+    font-weight: bold;
+    
+}
   
   
 
