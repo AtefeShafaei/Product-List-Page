@@ -9,9 +9,10 @@ import MidSlider from '../components/MidSlider';
 import { useProducts } from '../context/ProductContext';
 import Category from '../components/Category';
 import Banner from '../components/Banner';
+import BestBrand from '../components/BestBrand';
 
 
-function ProductsPage({product, onAddToCart}) {
+function ProductsPage({product}) {
 
   const {products} = useProducts();
 
@@ -39,13 +40,15 @@ function ProductsPage({product, onAddToCart}) {
     <div className='container'>
         <div className='row product-page'>
             {products.map(prod => (
-                <div key={prod.id} className="col-sm-6 col-md-3 mb-4">
-                    <ProductCard product={prod} onAddToCart={onAddToCart} variant='default' />
+                <div key={prod.id} className="col-sm-6 col-md-2 mb-4">
+                    <ProductCard product={prod} variant='default' />
                 </div>
             ))}
 
         </div>
     </div>
+
+    <BestBrand />
 
     
     </>

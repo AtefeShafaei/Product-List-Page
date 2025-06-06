@@ -1,6 +1,11 @@
 import React from 'react';
 
-function ProductCard({product, onAddToCart, variant= "default"}) {
+function ProductCard({product, variant= "default"}) {
+
+  const onAddToCart = (prod) => {
+    
+    console.log(prod);
+  }
 
   const cardClass = 
   variant === 'mid-slider' ? 'card mid-slider-card' : 'card h-100 cards shadow-sm rounded-3';
@@ -18,9 +23,9 @@ function ProductCard({product, onAddToCart, variant= "default"}) {
             </>
           ) : (
             <>
-            <h6 className='card-title'>{product.name}</h6>
+            <p className='card-title text-truncate'>{product.name}</p>
             <p className='card-text mt-3 fw-bold text-success'>{product.price} تومان </p>
-            <button className='btn btn-primary mt-auto' onClick={() => onAddToCart(product)}> افزودن به سبد خرید </button>
+            <button className='btn btn-primary mt-auto btn-sm' onClick={() => onAddToCart(product)}> افزودن به سبد خرید </button>
             </>
           )}
 
