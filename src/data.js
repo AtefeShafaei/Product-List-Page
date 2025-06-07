@@ -139,7 +139,36 @@ const products = [
     price: "۳۵۳,۵۰۰",
     image: "https://dkstatics-public.digikala.com/digikala-products/e2d3234e7091491672938d3871a0ab19939557c2_1622445160.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
     rate: 4.5
+    },
+    {
+    id: 21,
+    name: "ژل آبرسان فارم استی مدل hyaluronic acid حجم 250 میلی لیتر",
+    price: "۹۰۵,۰۰۰",
+    image: "https://dkstatics-public.digikala.com/digikala-products/67f0b249105480f0dd4e15692918b3f2d4fb5617_1671638595.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
+    rate: 3.3
+    },
+    {
+    id: 22,
+    name: "رژ لب جامد کیکو میلانو مدل Smart شماره 412",
+    price: "۱,۱۰۰,۰۰۰",
+    image: "https://dkstatics-public.digikala.com/digikala-products/0d643325dfa3b741f7c5a6d4088da77c507b4acf_1681749295.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
+    rate: 3
+    },
+    {
+    id: 23,
+    name: "رژ لب جامد این لی مدل Primrose شماره 540",
+    price: "۱۸۰,۰۰۰",
+    image: "https://dkstatics-public.digikala.com/digikala-products/3761bf7632977f84a999a81b0cb37b063996934f_1642924905.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
+    rate: 5
+    },
+    {
+    id: 24,
+    name: "قلم موی طراحی ناخن مدل M9818 بسته 6 عددی",
+    price: "۷۲۰,۰۰۰",
+    image: "https://dkstatics-public.digikala.com/digikala-products/49621b2c64fe9357023fdbe44d3522d853341b53_1688890480.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
+    rate: 4.3
     }
+
   ];
   
   export default products;

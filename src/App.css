@@ -3,6 +3,10 @@
     --dark-color: #2f3542;
 }
 
+* {
+    box-sizing: border-box;
+  }  
+
 body {
     font-family: 'Shabnam', sans-serif;
     
@@ -164,7 +168,7 @@ a {
   
 
   
-/* TopSlider */
+/* -------------------------------------------------------------- TopSlider -------------------------------------------- */
 
 .slider {
     position: relative;
@@ -237,7 +241,7 @@ a {
 }
 
 
-/* MidSlider */
+/* ------------------------------------------- MidSlider ------------------------------------------- */
 .mid-slider {
     display: flex;
     gap: 10px;
@@ -358,7 +362,7 @@ a {
 
 
 
-/* Category */
+/* ------------------------------------------ Category ----------------------------------------------- */
 .category {
     margin-top: 40px;
 }
@@ -393,7 +397,7 @@ a {
     
 }
 
-/* Banner */
+/* ------------------------Banner-------------------------- */
 .banner {
     margin-top: 30px;
     width: 100%;
@@ -450,55 +454,55 @@ a {
 /*  */
 
 .product-page {
-    padding-top: 130px;
+    padding-top: 110px;
 }
 
 
 
 /* -----------------BestBrand----------------------------- */
-.brand-scroll {
-    scroll-behavior: smooth;
-    padding-bottom: 10px;
-  }
-  
-  .brand-box {
-    width: 90px;
-    height: 90px;
+
+.best-slider {
+    margin: 80px auto;
+}
+
+.best {
+    text-align: center;
     border: 1px solid #eee;
-    transition: transform 0.3s ease;
-  }
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.best h5 {
+    margin: 20px auto;
+}
+
+.brand-card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
   
-  .brand-box:hover {
-    transform: scale(1.05);
-    cursor: pointer;
-  }
-  
-  .brand-img {
-    width: 60px;
-    height: 60px;
-    object-fit: contain;
-  }
-  
-  /* دکمه‌های اسکرول */
-  .scroll-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: white;
-    border: 1px solid #ddd;
+.brand-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    border: 1px solid #eee;
+    background-color: #fff;
+    text-align: center;
     border-radius: 50%;
-    padding: 6px;
-    z-index: 2;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  }
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);   
+}
   
-  .scroll-btn.left {
-    right: -10px;
-  }
-  
-  .scroll-btn.right {
-    left: -10px;
-  }
+.brand-item img {
+    max-width: 70%;
+    max-height: 70%;
+    object-fit: contain;
+}
   
   
 
@@ -587,5 +591,13 @@ a {
     .next-slide {
         font-size: 20px;
         top: 40%;
+    }
+
+    .product-page {
+        padding-top: 60px;
+    }
+
+    .best-slider {
+        margin: 20px 10px;
     }
 }
