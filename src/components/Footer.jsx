@@ -7,9 +7,8 @@ function Footer() {
 
         <div className='footer-logo'>
             <img src={logo} alt='logo' />
-            <p>تلفن پشتیبانی 021-55254822135</p>
-            <p>پاسخگویی همه روزه</p>
-        </div>
+            <p>تلفن پشتیبانی 25585885772 - 021 |  پاسخگویی همه روزه </p>
+        </div> 
 
         <div className='footer-columns'>
 
