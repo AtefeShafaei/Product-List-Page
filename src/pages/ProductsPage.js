@@ -10,6 +10,7 @@ import { useProducts } from '../context/ProductContext';
 import Category from '../components/Category';
 import Banner from '../components/Banner';
 import BestBrand from '../components/BestBrand';
+import Footer from '../components/Footer';
 
 
 function ProductsPage({product}) {
@@ -49,6 +50,7 @@ function ProductsPage({product}) {
     </div>
 
     <BestBrand />
+    <Footer />
 
     
     </>
